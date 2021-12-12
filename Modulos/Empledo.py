@@ -15,3 +15,23 @@ class Empleado:
         else: 
             print("Acceso Denegado")
             return True
+
+#Subclases
+
+class JefeDeBodega(Empleado):
+    def __init__(self, RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña):
+        Empleado(RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña).__init__(RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña)
+
+
+
+class Administrador(Empleado):
+    def __init__(self, RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña):
+        Empleado(RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña).__init__(RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña)
+
+
+
+class Gestor(Empleado):
+    def __init__(self, RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña):
+        Empleado(RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña).__init__(RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña)
+
+
