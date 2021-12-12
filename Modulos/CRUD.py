@@ -11,5 +11,18 @@ class MySql:
         self.cursor = self.connection.cursor()
         print("Conexion excitosa")
     
-  
+    def seleccionarBD(self):
+        pass
 
+    def seleccionarTodo(self):
+        pass
+
+    def ingresar(self):
+        pass
+
+    def actualizar(self):
+        pass
+
+    def borrar(self,id):
+        pass
+    
