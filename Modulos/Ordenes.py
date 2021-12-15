@@ -4,7 +4,6 @@ class Ordenes:
         self.Productos = Productos
         self.CantidadPorProducto = CantidadPorProducto
         self.PrecioTotal = float(PrecioTotal)
-        self.__GuardadoDataBaseOrdenes
 
     def CrearBoleta(self) -> None:
         print('Empresa: LexuKu')
@@ -16,5 +15,5 @@ class Ordenes:
     def CrearOrdenProducto(self):
         pass
 
-    def __GuardadoDataBaseOrdenes(self):
+    def GuardadoDataBaseOrdenes(self):
         pass
