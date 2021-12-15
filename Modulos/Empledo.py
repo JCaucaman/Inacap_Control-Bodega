@@ -1,6 +1,5 @@
-
-from _typeshed import Self
-
+from Modulos import CRUD
+from Modulos.CRUD import * 
 
 class Empleado:
     def __init__(self,RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña):
@@ -40,7 +39,7 @@ class Administrador(Empleado):
         pass
 
     def EliminarProductos(self):
-        pass
+        CRUD.Crud.borrar()
 
     def NuevaOrden(self):  
         pass

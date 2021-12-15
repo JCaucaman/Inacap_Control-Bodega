@@ -31,3 +31,5 @@ class MySql:
         except Exception as e:
             print("El valor ya existe",e)
             raise
+
+Crud = MySql()
