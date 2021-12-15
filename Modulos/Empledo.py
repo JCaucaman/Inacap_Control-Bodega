@@ -29,14 +29,14 @@ class JefeDeBodega(Empleado):
         Empleado(RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña).__init__(RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña)
 
     def NuevoProducto(self):
-        pass
+        CRUD.Crud.ingresar()
 
 class Administrador(Empleado):
     def __init__(self, RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña):
         Empleado(RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña).__init__(RUN, NombreCompleto, FechaDeNacimiento, FotoCarnet, contraseña)
 
     def NuevoProductos(self):
-        pass
+        CRUD.Crud.ingresar()
 
     def EliminarProductos(self):
         CRUD.Crud.borrar()
