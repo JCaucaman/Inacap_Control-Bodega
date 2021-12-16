@@ -28,7 +28,7 @@ class MySql:
     def ingresar(self, Nombre_Tabla , dato1 = '', dato2 = '', dato3 = '', dato4 = '', dato5 = '', dato6 = '', dato7 = '', dato8 = ''):
         try:
             if(Nombre_Tabla == 'empleado' ):
-                sql = "insert intro empleado (id_empleado, rut, nombreCompleto, fechadenaciminto, fotoCarnet, contraseña, nombreusurio, puesto) values ({},{},{},{},{},{},{},{})".format(dato1, dato2, dato3, dato4, dato5, dato6, dato7, dato8)
+                sql = "insert intro empleado (id_empleado, rut, nombreCompleto, fechadenaciminto, fotoCarnet, contraseña, nombreusurio, puesto) values ({},'{}','{}','{}','{}','{}','{}','{}')".format(dato1, dato2, dato3, dato4, dato5, dato6, dato7, dato8)
                 self.cursor.execute(sql)
                 self.connection.commit()
             elif(Nombre_Tabla == 'bodega'):
