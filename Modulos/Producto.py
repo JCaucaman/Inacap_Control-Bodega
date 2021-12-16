@@ -11,5 +11,5 @@ class Productos:
     def ingresarProducto(self):
         pass
 
-    def __GuardadoDataBaseProductos(self):
+    def GuardadoDataBaseProductos(self):
         pass

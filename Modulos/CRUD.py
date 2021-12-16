@@ -1,7 +1,7 @@
 import pymysql
 
 class MySql:
-    def __init__(self, Host = str, User = str, NameDataBase = str, Password = '') -> None:
+    def __init__(self, NameDataBase = str, Password = '', Host = 'localhost', User = 'root') -> None:
         self.connection = pymysql.connect(
             host = Host,
             user = User,
@@ -73,4 +73,4 @@ class MySql:
         self.connection.close()
         print('Conexion cerrada')
 
-  
+Database_MySql = MySql('controlbodegapy')
